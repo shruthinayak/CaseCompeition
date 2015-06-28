@@ -3,8 +3,42 @@
     <string name="app_name">Speech To Text</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_prompt">Check in?</string>
     <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
     <string name="tap_on_mic">Tap on mic to speak</string>
     <string name="username">Name</string>
+    <string name="vv_url">http://www.voicevault.com/</string>
+    <string name="vigo_demo_url">market://details?id=com.voicevault.vigodemo</string>
+    <string name="title_activity_login">ViGo Sample App</string>
+    <string name="title_activity_main">ViGo Sample App</string>
+    <string name="title_activity_recording">ViGo Sample App</string>
+    <string name="action_settings_1">Optimize recording for voice</string>
+
+    <string name="login_completed">Success!</string>
+    <string name="status_loading">Loading, please wait...</string>
+    <string name="status_say">Please press button and say the phrase:</string>
+    <string name="status_recording">Recording, please speak now...</string>
+    <string name="status_uploading">Uploading, please wait...</string>
+
+    <string name="logon_vigo_demo">To see more, check out our ViGo demo...</string>
+
+    <string name="dialog_identity_unproven">Identity not proven</string>
+    <string name="dialog_identity_request">Enter PIN to validate:</string>
+    <string name="dialog_adaptation_title">ViGo Adaptation PIN</string>
+    <string name="dialog_adaptation_text">Please set 4-digit PIN:</string>
+
+    <string name="record">Record</string>
+
+    <string name="button_enroll">Registration</string>
+    <string name="button_verify">Verification</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+
+    <string name="toast_enroll_success">Registration successful</string>
+    <string name="toast_verify_cancel">Verification cancelled</string>
+    <string name="toast_verify_failed">Verification unsuccessful</string>
+    <string name="toast_register_failed">Error registering user</string>
+    <string name="toast_adaptation_set">PIN code set</string>
+    <string name="toast_adaptation_not_set">No PIN, Adaptation disabled</string>
+    <string name="toast_register_cancelled">Registration cancelled</string>
 </resources>
