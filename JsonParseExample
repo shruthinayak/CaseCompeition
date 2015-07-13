@@ -1,0 +1,65 @@
+Regarding the Gson JSON parser since I don't have the JSON file (actually not needed) here is the way to prase it:
+
+This was my sample jsonParser.java
+
+package gsonExample;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import gsonExample.country;
+import com.google.gson.*;
+
+public class jsonParser {
+	public static void main(String[] args)
+	{
+		Gson gson = new Gson();
+		try {
+			BufferedReader br = new BufferedReader(new FileReader("test.json"));
+			country c2 = gson.fromJson(br, country.class);
+			System.out.println(c2.getName());
+			System.out.println(c2.getNoOfStates());
+		} catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}
+
+Notice the class country here. That is the class into which the json is parsed. I created this class. How it works is that gson 
+parser will convert a json file into an object of a class that you specify. One thing to remember is that there has to be same
+formatting between the class and the json. 
+
+For our purpose, what I would do is, like in the file above based on the data that we need to parse we need to create a class 
+that will have the necessary getters and setters to absorb the data and then simply call the gson fromJson function with the
+json and that class name.
+
+Just for reference, I am pasting the country class that I created:
+
+package gsonExample;
+
+public class country {
+	String name;
+	int noOfStates;
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public int getNoOfStates()
+	{
+		return noOfStates; 
+	}
+	
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
+	public void setNoOfStates(int nos)
+	{
+		this.noOfStates = nos;
+	}
+}
+
